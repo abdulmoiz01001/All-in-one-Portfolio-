@@ -289,11 +289,6 @@
   [data-reveal], [data-reveal] .section-heading > *, [data-stagger] > * { opacity: 1 !important; transform: none !important; filter: none !important; }
 }
 
-/* Global Select None & Image Settings */
-body {
-  user-select: none;
-  -webkit-user-select: none;
-}
 
 img {
   pointer-events: none;

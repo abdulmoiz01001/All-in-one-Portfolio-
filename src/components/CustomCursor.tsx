@@ -10,9 +10,6 @@ export function CustomCursor() {
       return;
     }
 
-    // Add select-none to body
-    document.body.classList.add("select-none");
-
     // Force hide default cursor
     document.body.style.cursor = 'none';
 
@@ -70,7 +67,6 @@ export function CustomCursor() {
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
       cancelAnimationFrame(animationFrameId);
-      document.body.classList.remove("select-none");
       document.body.style.cursor = 'auto';
     };
   }, []);
